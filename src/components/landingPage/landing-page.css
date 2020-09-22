@@ -19,6 +19,7 @@ header {
     position: sticky;
     width: 100%;
     top: 0;
+    box-shadow: 0px 0px 10px 5px #0000007a;
 }
 
 .car-icon {
@@ -58,8 +59,7 @@ header {
 
 .header-submit-button:hover {
     background-color:#00dc7b;
-    box-shadow: 0px 10px 15px #000000;
-    transform: translateY(-3px);
+    box-shadow: 0px 10px 15px #0000007a;
 }
 
 .header-submit-button:focus {
@@ -81,7 +81,7 @@ header {
     transition: ease-in-out, all .35s ease-in-out;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #e0e0e0;
+    color: black;
 }
 
 .header-input:focus {
@@ -89,6 +89,7 @@ header {
     border: none;
     border-radius: 5px;
     background-color: #004225;
+    color: #e0e0e0;
 }
 
 .contant-container {
@@ -124,8 +125,7 @@ header {
 
 .contant-add-button:hover {
     background-color: #d1d1d1;
-    box-shadow: 0px 10px 15px #7a7a7a;
-    transform: translateY(-3px);
+    box-shadow: 0px 10px 15px #0000007a;
 }
 
 .contant-add-button:focus {
@@ -152,143 +152,4 @@ hr {
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
-}
-
-.car-list-container {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-}
-
-.car-list-text {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-}
-
-.car-list-contant {
-    background-color: #d1d1d1;
-    margin: 0.3rem;
-    border-radius: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 1rem;
-    border: none;
-    transition: ease-in-out, all .2s ease-in-out;
-}
-
-.car-list-contant:hover {
-    box-shadow: 10px 10px 10px #777777;
-}
-
-.car-list-contant:focus {
-    outline: none;
-    background-color: #00a95e;
-}
-
-.car-list-brand-text {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.3rem;
-}
-
-.car-list-model-text {
-    font-family: 'Montserrat', sans-serif;
-    color:  #008f50;
-}
-
-.car-list-year-text {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.car-specs-container {
-    display: flex;   
-    flex-direction: column;
-    flex-basis: 50%;
-    position: sticky;
-    top: 0;
-}
-
-.car-specs-title {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-}
-
-.car-specs-contant {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #d1d1d1;
-    border-radius: 0.8rem;
-    padding-top: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 1rem;
-}
-
-.car-name-text {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.3rem;
-    color:  #008f50;
-}
-
-.car-specs-year-brand-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
-}
-
-.car-brand-container {
-    flex-basis: 50%;
-}
-
-.brand-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-.car-specs-brand-text {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.car-year-container {
-    flex-basis: 50%;
-}
-
-.year-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-.car-specs-year-text {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.car-specs-text {
-    font-family: 'Montserrat', sans-serif;
-    text-align: justify;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.car-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.edit-button {
-    height: 3rem;
-    width: 3rem;
-    padding: 0;
-}
-
-.pencil-icon {
-    height: 2.5rem;
-    width: 2.5rem;
 }
