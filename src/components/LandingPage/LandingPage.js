@@ -12,7 +12,7 @@ function LandingPage() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="main-container">
+    <>
       <header>
         <img src={carIcon} alt="Icone do Carro" className="car-icon"></img>
         <div className="header-container-text">
@@ -20,25 +20,27 @@ function LandingPage() {
           <h1 className="header-text">FLORIPA</h1>
           <h1 className="header-text">MOTORS</h1>
         </div>
-        <input
-          type="search"
-          className="header-input"
-          placeholder="Busca"
-        ></input>
-        <button type="submit" className="header-submit-button">
-          <img
-            src={magnifyingGlassIcon}
-            alt="Icone de Busca"
-            className="magnifying-glass-icon"
-          ></img>
-        </button>
+        <form className="header-form">
+          <input
+            type="search"
+            className="header-input"
+            placeholder="Busca"
+          ></input>
+          <button type="submit" className="header-submit-button">
+            <img
+              src={magnifyingGlassIcon}
+              alt="Icone de Busca"
+              className="magnifying-glass-icon"
+            ></img>
+          </button>
+        </form>
       </header>
 
-      <div className="contant-container">
-        <h1 className="contant-text">VEÍCULOS</h1>
+      <div className="car-container">
+        <h1 className="car-title">VEÍCULOS</h1>
         <button
           type="button"
-          className="contant-add-button"
+          className="car-add-button"
           onClick={() => setOpen(true)}
         >
           <img src={plusIcon} alt="Icone de Adicao" className="plus-icon"></img>
@@ -47,10 +49,10 @@ function LandingPage() {
       </div>
       <hr />
 
-      <div className="car-contant-container">
+      <div className="car-content-container">
         <CarList />
       </div>
-    </div>
+    </>
   );
 }
 

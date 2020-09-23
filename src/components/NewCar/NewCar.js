@@ -38,11 +38,11 @@ function NewCar({ onClose }) {
             <textarea className="new-car-description" type="text"></textarea>
           </section>
           <section className="popup-section-4">
-            <button className="popup-submit-button" type="submit">
+            <button className="popup-button" type="submit">
               Adicionar
             </button>
             <button
-              className="popup-cancel-button"
+              className="popup-button"
               type="button"
               onClick={() => onClose()}
             >

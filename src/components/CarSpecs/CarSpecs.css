@@ -1,4 +1,4 @@
-.car-specs-container {
+.car-specs-main-container {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
@@ -35,7 +35,7 @@
   margin-left: 0.5rem;
 }
 
-.car-specs-year-brand-container {
+.car-specs-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,29 +46,18 @@
   flex-basis: 50%;
 }
 
-.brand-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-.car-specs-brand-text {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .car-year-container {
   flex-basis: 50%;
 }
 
-.year-text {
+.car-subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-.car-specs-year-text {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.car-specs-text {
+.car-text {
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
   margin-left: 0.5rem;

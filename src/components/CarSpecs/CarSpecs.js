@@ -6,21 +6,21 @@ import shoppingCartIcon from '../../images/icons/shopping-cart-icon.svg';
 
 function CarSpecs() {
   return (
-    <div className="car-specs-container">
+    <div className="car-specs-main-container">
       <h3 className="car-specs-title">Detalhes</h3>
       <div className="car-specs-contant">
         <h3 className="car-name-text">Palio G5 SP.1.6 Flex</h3>
-        <div className="car-specs-year-brand-container">
+        <div className="car-specs-container">
           <div className="car-brand-container">
-            <p className="brand-text">MARCA</p>
-            <p className="car-specs-brand-text">Fiat</p>
+            <p className="car-subtitle">MARCA</p>
+            <p className="car-text">Fiat</p>
           </div>
           <div className="car-year-container">
-            <p className="year-text">ANO</p>
-            <p className="car-specs-year-text">2016</p>
+            <p className="car-subtitle">ANO</p>
+            <p className="car-text">2016</p>
           </div>
         </div>
-        <p className="car-specs-text">
+        <p className="car-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in semper
           dolor. Praesent aliquet placerat sem quis malesuada. Quisque ac
           dapibus velit. Morbi consectetur malesuada orci, nec pulvinar velit

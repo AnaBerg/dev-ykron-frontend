@@ -44,33 +44,8 @@ header {
   font-size: 1.3rem;
 }
 
-.header-submit-button {
-  height: 3rem;
-  width: 3rem;
-  padding: 0;
-  margin-right: 1rem;
+.header-form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #008f50;
-  border: 0;
-  border-radius: 50%;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-.header-submit-button:hover {
-  background-color: #00dc7b;
-  box-shadow: 0px 10px 15px #0000007a;
-}
-
-.header-submit-button:focus {
-  outline: none;
-}
-
-.magnifying-glass-icon {
-  height: 1.9rem;
-  width: 1.9rem;
 }
 
 .header-input {
@@ -102,21 +77,51 @@ input:focus::-webkit-input-placeholder {
   color: #e0e0e0;
 }
 
-.contant-container {
+.header-submit-button {
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008f50;
+  border: 0;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.header-submit-button:hover {
+  background-color: #00dc7b;
+  box-shadow: 0px 10px 15px #0000007a;
+}
+
+.header-submit-button:focus {
+  outline: none;
+}
+
+.magnifying-glass-icon {
+  height: 1.9rem;
+  width: 1.9rem;
+}
+
+
+.car-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 3rem;
 }
 
-.contant-text {
+.car-title {
   font-family: 'Comfortaa', cursive;
   font-size: 2rem;
   margin-left: 3rem;
   flex: 1;
 }
 
-.contant-add-button {
+.car-add-button {
   height: 3rem;
   width: 3rem;
   padding: 0;
@@ -133,12 +138,12 @@ input:focus::-webkit-input-placeholder {
   margin-right: 3rem;
 }
 
-.contant-add-button:hover {
+.car-add-button:hover {
   background-color: #d1d1d1;
   box-shadow: 0px 10px 15px #0000007a;
 }
 
-.contant-add-button:focus {
+.car-add-button:focus {
   outline: none;
 }
 
@@ -155,7 +160,7 @@ hr {
   background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.363), transparent);
 }
 
-.car-contant-container {
+.car-content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
