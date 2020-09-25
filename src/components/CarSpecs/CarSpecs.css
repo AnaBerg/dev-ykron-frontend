@@ -1,10 +1,3 @@
-.car-specs-main-container {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
-  margin-left: 0.5rem;
-}
-
 .car-specs-title {
   font-family: 'Comfortaa', cursive;
   font-size: 1.4rem;
@@ -16,7 +9,6 @@
   position: sticky;
   top: 90px;
   height: 25rem;
-  justify-content: center;
   flex-direction: column;
   background-color: #e9e9e9;
   border-radius: 0.8rem;
@@ -53,15 +45,19 @@
 .car-subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .car-text {
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
+}
+
+.car-description {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  flex: 1;
 }
 
 .car-button-container {

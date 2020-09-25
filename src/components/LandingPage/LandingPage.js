@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './LandingPage.css';
 
 import CarList from '../CarList';
@@ -8,9 +8,43 @@ import carIcon from '../../images/icons/car-icon.svg';
 import magnifyingGlassIcon from '../../images/icons/magnifying-glass-icon.svg';
 import plusIcon from '../../images/icons/plus-icon.svg';
 
-function LandingPage() {
-  const [open, setOpen] = useState(false);
+const carDescription = [];
 
+function LandingPage() {
+  const [list, setList] = useState(carDescription);
+  const [open, setOpen] = useState(false);
+  const [selectedCar, setSelectedCar] = useState();
+  const [edit, setEdit] = useState(false);
+  const [search, setSearch] = useState();
+
+  const handleEdit = useCallback((edit) => {
+    setEdit(edit);
+    setOpen(edit);
+  }, []);
+
+  const handleList = (input) => {
+    setSelectedCar();
+    if (input.sold) {
+      setList((prev) => prev.filter((_, index) => index !== input.id));
+    } else if (input.id || input.id === 0) {
+      setList((prev) => prev.map((p, id) => (id === input.id ? input : p)));
+    } else {
+      setList((prev) => [...prev, input]);
+    }
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const { value } = event.target[0];
+    setSearch(value);
+    setSelectedCar();
+  };
+  const filtredList = list.filter(
+    (l) =>
+      l.name.match(search) ||
+      l.brand.match(search) ||
+      String(l.year).match(search)
+  );
   return (
     <>
       <header>
@@ -20,7 +54,7 @@ function LandingPage() {
           <h1 className="header-text">FLORIPA</h1>
           <h1 className="header-text">MOTORS</h1>
         </div>
-        <form className="header-form">
+        <form className="header-form" onSubmit={(e) => handleSearch(e)}>
           <input
             type="search"
             className="header-input"
@@ -45,12 +79,28 @@ function LandingPage() {
         >
           <img src={plusIcon} alt="Icone de Adicao" className="plus-icon"></img>
         </button>
-        {open && <NewCar onClose={() => setOpen(false)} />}
+        {open && (
+          <NewCar
+            onClose={() => {
+              setOpen(false);
+              setEdit(false);
+            }}
+            submit={handleList}
+            edit={edit}
+            values={selectedCar}
+          />
+        )}
       </div>
       <hr />
 
       <div className="car-content-container">
-        <CarList />
+        <CarList
+          selected={selectedCar}
+          selectCar={setSelectedCar}
+          carList={filtredList}
+          setEdit={handleEdit}
+          handleList={handleList}
+        />
       </div>
     </>
   );

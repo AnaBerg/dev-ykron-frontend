@@ -13,15 +13,12 @@
   transition: ease-in-out, all .2s ease-in-out;
 }
 
-.car-card:hover {
+.car-card:hover,
+.car-card:focus {
+  outline: none;
   box-shadow: 0px 5px 5px 2.5px #7777779c;
 }
 
-.car-card:focus {
-  outline: none;
-  background-color: #008f50;
-  color: #ffffff;
-}
 
 .car-card-brand-text {
   font-family: 'Comfortaa', cursive;
