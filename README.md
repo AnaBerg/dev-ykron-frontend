@@ -18,3 +18,7 @@ O projeto é apenas uma simples **UI (User Interface)** de uma loja de venda de 
     - Marca
     - Ano de fabricação
     - Descrição
+
+## CRÉDITOS
+
+Projeto produzido por **Ana Paula Loureiro Berg** e icones foram retirados do site **Flaticon**.
